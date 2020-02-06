@@ -20,6 +20,7 @@ h1 {
 .box2 {
   padding-top: 10px;
   line-height: 200%;
+  margin-block-end: 1em;
 }
 .box2 button {
   display: block;

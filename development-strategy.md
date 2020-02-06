@@ -2,7 +2,6 @@
 
 ## Steps Plan
 
-
 | _Step Name_ | User Story | Changes in HTML | Changes in CSS |
 | --- | --- | --- | --- |
 | __Step 1: DOM__ | As a HYF student, I want to draft the layout of my project using wireframe.cc and build the basic HTML code, so that I can start using the tags with id attributes in javascript | HTML index file with a basic form, two input boxes for the input values to process, one selector with the operation to perform and a button to execute the calculation | N/A |
