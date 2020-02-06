@@ -17,9 +17,14 @@ const doMathTests = [
   { name: 'invalid - 2', args: ['book', 0, 0], expected: 'invalid operation' },
   { name: 'invalid - 3', args: ['minus', 0, 0], expected: 'invalid operation' },
   // write 7 more test cases for doMath
-
+  { name: 'add - 4', args: ['add', -5.1, 1], expected: -4.1 },
+  { name: 'min - 4', args: ['min', 5.3, -1], expected: 6.3 },
+  { name: 'div - 4', args: ['div', 1, 0], expected: Infinity },
+  { name: 'mul - 4', args: ['mul', 2, 0.5], expected: 1 },
+  { name: 'invalid - 4', args: ['qwerty', 0.1, 2], expected: 'invalid operation' },
+  { name: 'invalid - 5', args: ['uiop', 1.5, 0], expected: 'invalid operation' },
+  { name: 'invalid - 6', args: ['temp', 0, 4.6], expected: 'invalid operation' },
 ];
-
 // refactor the logic from the calculator tutorial into this function
 function doMath(operation, a, b) {
   // these if statements make sure all arguments are the correct type
@@ -34,10 +39,18 @@ function doMath(operation, a, b) {
     throw new Error('b should be a number');
   }
   // write your code below this comment:
-
-
-
+  if (isNaN(a) || isNaN(b)) {
+    return 'invalid operation';
+  } else if (operation === 'add') {  
+    return a+b;
+  } else if (operation === 'min') {  
+    return a-b;
+  } else if (operation === 'mul') {  
+    return a*b;
+  } else if (operation === 'div') {  
+    return a/b;    
+  } else {
+    return 'invalid operation';
+  }
 }
-
-
 testing(doMath, doMathTests);
