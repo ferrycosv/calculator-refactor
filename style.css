@@ -1,0 +1,55 @@
+/* Common CSS styles */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #231f20;
+  font-weight: bold;
+}
+h1 {
+  font-family: monospace;
+  font-size: 3em;
+  color: #bb4430;
+}
+/* calculator layout style */
+.box1 {
+  padding-left: 2em;
+  padding-right: 2em;
+  vertical-align: middle;
+  width: 88%;
+}
+.box2 {
+  padding-top: 10px;
+  line-height: 200%;
+}
+.box2 button {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 30px;
+}
+.main-area {
+  border: 5px ridge gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  min-width: 540px;
+  margin: 0 auto;
+  background-color: #f3dfa2;
+  border-radius: 15px;
+}
+/* LCD style */
+.lcd-display {
+  color: #d31f00;
+  background-color: #4f4648;
+  border: 5px ridge #7ebdc2;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.lcd-display pre {
+  font-family: "Segment7Standard";
+  font-size: 55px;
+  text-align: end;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
