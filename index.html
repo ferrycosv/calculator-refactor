@@ -1,16 +1,30 @@
 <html>
-
-<head>
-
-  <!-- this script is to help evaluate your deployed project -->
-  <script src='./dependencies/evaluation.js'></script>
-  <!-- this is the testing function for your logic -->
-  <script src='./dependencies/testing.js'></script>
-
-</head>
-
-<body>
-
-</body>
-
+  <head>
+    <!-- this script is to help evaluate your deployed project -->
+    <script src="./dependencies/evaluation.js"></script>
+    <!-- this is the testing function for your logic -->
+    <script src="./dependencies/testing.js"></script>
+    <!-- this is the javascript file for the handler -->
+    <script src="./scripts/testing.js"></script>
+  </head>
+  <body>
+    <main class="main-area">
+      <!-- this span show the result of the operation -->
+      <span id="result">1234567890</span>
+      <!-- this form captures the values and type of operation -->
+      <form>
+        Input 1: <input type="text" id="inputbox1" /><br />
+        Input 2: <input type="text" id="inputbox2" /><br />
+        Operation:
+        <select id="operation">
+          <option value="add">Add</option>
+          <option value="min">Subtract</option>
+          <option value="times">Multiply</option>
+          <option value="div">Divide</option> </select
+        ><br />
+        <!-- button to execute the operation -->
+        <button id="btncalculate">Calculate</button>
+      </form>
+    </main>
+  </body>
 </html>
