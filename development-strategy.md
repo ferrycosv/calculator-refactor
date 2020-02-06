@@ -8,6 +8,7 @@
 | __Step 1: DOM__ | As a HYF student, I want to draft the layout of my project using wireframe.cc and build the basic HTML code, so that I can start using the tags with id attributes in javascript | HTML index file with a basic form, two input boxes for the input values to process, one selector with the operation to perform and a button to execute the calculation | N/A |
 | __Step 2: style__ | As a HYF student, I want to add CSS properties to build the layout of my project using, so that the HTML elements are rendered properly and look sleek | Added a heading and the containers to arrange the elements with CSS properties | Added all the styles for the elements displayed on the screen |
 | __Step 3: listener__ | As a HYF student, I want to assign and manipulate HTML elements events, so that I'm able to execute javascript code when the event is triggered | Added the link to the javascript source files for the listener, handler and logic; changed the type of the button tag | No changes to this file |
+| __Step 4: handler__ | As a HYF student, I want to process the event triggered on my listener, so that I can execute the logic needed | No changes to this file | No changes to this file |
 
 [wireframe](https://wireframe.cc/vtW61U)
 
@@ -40,7 +41,7 @@
 
 | syntax | parameters | return value | behavior |
 | --- | --- | --- | --- |
-| | | | |
+| __function calculateHandler(event)__ | the event that is triggered | boolean | process the click event for the calculate button, outputs to screen the result of the logic and logs in the console the operation performed by the user |
 
 ## Logic
 
