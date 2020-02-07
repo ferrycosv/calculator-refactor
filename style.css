@@ -36,16 +36,17 @@ h1 {
   width: 50%;
   min-width: 600px;
   margin: 0 auto;
-  background-color: #f3dfa2;
+  background-image: url('./img/background.jpg');
+  background-size: cover;
   border-radius: 15px;
 }
 /* LCD style */
 .lcd-display {
   color: #d31f00;
-  background-color: #4f4648;
-  border: 5px ridge #7ebdc2;
   margin-left: 20px;
   margin-right: 20px;
+  background-image: url('./img/display.jpg');
+  background-size: 100% 100%;
 }
 .lcd-display pre {
   font-family: "Segment7Standard";
